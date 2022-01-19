@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.app{
+  background-color: rgba(38, 3, 49, 0.418);
+  border: 2px solid black;
+}
+.app__h1{
+  color: #4aa8c7;
+  font-size: 50px;
+  margin: 30px;
+  text-align: center;
+  text-shadow: 1px 1px 25px rgb(246, 241, 173);
+}
+.form,
+.hide__show__button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form__input__title,
+.form__input__description,
+.form__input__submit,
+.hide__show__button {
+  width: 80%;
+  height: 40px;
+  border:2px solid rgb(131, 114, 213);
+  border-radius: 10px;
+  margin: 10px auto;
+  font-size: 20px;
+  min-width: 300px;
+}
+.form__input__submit,
+.hide__show__button {
+  width: 50px;
+  background-color: rgb(131, 114, 213);
+  color: white;
+  width: 100px;
+  box-shadow: 1px 1px 15px rgb(116, 114, 114);
+  cursor: pointer;
+}
+.hide__show__button{
+  width: 40px;
+  font-size: 17px;
+}
+
+.list{
+  margin: 30px;
+  padding: 10px;  
+}
+.list__h2{
+  color: #4aa8c7;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 1px 1px 25px rgb(246, 241, 173);
+}
+.list__todo,
+.list__done{
+  list-style-type: none;
+  margin-bottom:10px;
+  min-width: 300px;
+}
+
+.todo{
+  inline-size: 400px;
+  overflow-wrap: break-word;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  background-color: white;
+  max-width: 400px;
+  border: 2px solid rgb(131, 114, 213); 
+}
+.todo__done {
+  inline-size: 400px;
+  overflow-wrap: break-word;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  background-color: rgb(202, 199, 206);
+  max-width: 400px;
+  border: 2px solid rgb(131, 114, 213);
+}
+
+.todo__done .todo__list{
+  text-decoration: line-through;
+  color:rgb(94, 94, 94);
+}
+.todo__button-done,
+.todo__button-remove,
+.todo__button-edit{
+  cursor: pointer;
+  width: 40px;
+  height: 25px;
+  border-radius: 5px;
+}
+.submit__edit{
+  border: 2px solid rgb(131, 114, 213);
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(131, 114, 213);
+  height: 30px;
+  margin-left: 15px;
+}
+.todo__button-done{
+background-color: #C3F1E2;
+}
+.todo__button-remove{
+background-color: #FFA3A5;
+margin-left: 20px;
+}
+.todo__button-edit{
+  background-color: #fdf8ae;
+  margin-left: 20px;
+  }
+@media (min-width:450px) {
+  .app{
+    max-width: 900px;
+  }
+}
